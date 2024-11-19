@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--border);
+  background-color: var(--primary);
 
   z-index: 999;
 }
@@ -37,6 +38,28 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.darkmode-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.sun-btn {
+  display: none;
+}
+
+.moon-btn {
+  display: unset;
+}
+
+:root.darkTheme .sun-btn {
+  display: unset;
+}
+
+:root.darkTheme .moon-btn {
+  display: none;
 }
 
 /*-- middle section --*/
@@ -73,9 +96,11 @@
   align-items: center;
 }
 
+.right-section svg,
 .right-section img {
   cursor: pointer;
 }
+
 .avatar {
   width: 24px;
   height: 24px;
