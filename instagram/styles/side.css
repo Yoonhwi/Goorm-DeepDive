@@ -1,0 +1,90 @@
+.side-container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+
+  min-width: 280px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.user.current img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.user-data .nickname {
+  color: var(--text-light);
+  max-width: 190px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.follow {
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0093f5;
+}
+
+.suggest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggest span {
+  font-size: 14px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.suggest button {
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.side-menu,
+.copyright {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+@media (max-width: 968px) {
+  .side-container {
+    display: none;
+  }
+}

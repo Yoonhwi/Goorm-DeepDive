@@ -1,0 +1,141 @@
+.main {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 16px;
+  width: 100%;
+  margin-top: 44px;
+  background-color: var(--secondary);
+  padding: 32px 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  gap: 16px;
+}
+
+/*--  story --*/
+.stories {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  gap: 8px;
+  padding: 16px;
+}
+
+.stories-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stories-item span {
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border: 1.5px solid var(--story-border);
+  background-color: var(--primary);
+  border-radius: 100%;
+}
+
+.avatar-container img {
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+}
+
+/*--  post --*/
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.posts-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.post-header-user {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.post-header-user span {
+  font-size: 13px;
+}
+
+.post-header-user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.more-icon {
+  cursor: pointer;
+}
+
+.post-picture {
+  overflow: hidden;
+  display: block;
+}
+
+.post-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+.post-footer-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-like {
+  display: flex;
+  gap: 16px;
+}
+
+.like-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like-user img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.post-time {
+  font-size: 10px;
+  color: var(--text-light);
+}
