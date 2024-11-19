@@ -1,0 +1,38 @@
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #212121ff;
+  width: 72px;
+  z-index: 999;
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  height: 72px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #4d4d4d;
+}
+
+.sidebar-link img {
+  height: 24px;
+}
+
+.sidebar-link span {
+  font-size: 11px;
+}
