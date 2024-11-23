@@ -1,0 +1,82 @@
+:root {
+  --primary: #edf2f7;
+
+  --light-bg-color: #fff;
+  --dark-bg-color: #333;
+
+  --border-color: #edf2f7;
+  --border-mid-color: #e2e8f0;
+  --border-dark-color: #a0aec0;
+
+  --btn-bg-color: #cbd5e0;
+  --btn-hover-bg-color: #a0aec0;
+
+  --light-text-color: #fff;
+  --dark-text-color: #333;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+}
+
+* {
+  font-family: "Parkinsans", "Noto Sans KR";
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--btn-bg-color);
+  color: var(--dark-text-color);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--btn-hover-bg-color);
+  color: var(--light-text-color);
+}
+
+svg path {
+  transition: all 0.3s;
+}
+
+button:hover svg path {
+  stroke: var(--light-text-color);
+  fill: var(--light-text-color);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}

@@ -1,0 +1,2 @@
+viewLists();
+taskContoller().addTask();

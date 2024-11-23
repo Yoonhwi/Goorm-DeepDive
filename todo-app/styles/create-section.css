@@ -1,0 +1,31 @@
+.create-section {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.add-task-input {
+  flex: 1;
+
+  box-sizing: border-box;
+  height: 40px;
+
+  border: none;
+  outline: none;
+
+  padding: 24px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--boder-color);
+  background-color: var(--light-bg-color);
+}
+
+.add-task-btn {
+  padding: 0 12px;
+}
+
+.horizon {
+  width: 100%;
+  height: 2px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--border-mid-color);
+}

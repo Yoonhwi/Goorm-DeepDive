@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/figure.css" />
+    <link rel="stylesheet" href="/styles/create-section.css" />
+    <link rel="stylesheet" href="/styles/list-section.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="/scripts/localstorage.js" defer></script>
+    <script src="/scripts/task.js" defer></script>
+    <script src="/scripts/dom.js" defer></script>
+    <script src="/scripts/view.js" defer></script>
+    <script src="/scripts/initialize.js" defer></script>
+    <title>Todo app - Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <figure class="figure">
+        <strong>TODO APP</strong>
+        <figcaption>
+          This is a simple application to manage your tasks efficiently.
+        </figcaption>
+      </figure>
+
+      <!-- add task -->
+      <form class="create-section">
+        <input
+          type="text"
+          class="add-task-input"
+          placeholder="Enter your task here..."
+        />
+        <button class="add-task-btn" type="submit">
+          <svg
+            width="18px"
+            height="18px"
+            viewBox="0 0 24 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 12H18M12 6V18"
+              stroke="#333"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </form>
+      <hr class="horizon" />
+
+      <!-- task list -->
+      <section class="list-section"></section>
+    </div>
+  </body>
+</html>
