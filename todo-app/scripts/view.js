@@ -12,8 +12,11 @@ const viewLists = () => {
     listSection.appendChild(notification);
   }
 
+  const fragment = document.createDocumentFragment();
   list.forEach((list) => {
     const listEl = createTaskEl(list);
-    listSection.appendChild(listEl);
+    fragment.appendChild(listEl);
   });
+
+  listSection.appendChild(fragment);
 };

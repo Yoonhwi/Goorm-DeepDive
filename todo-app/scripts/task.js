@@ -28,30 +28,31 @@ const taskContoller = () => {
    * 업무를 등록합니다.
    */
   const addTask = () => {
-    if (!taskInput) {
-      console.log("Failed get task input El");
+    if (!taskInput.value.trim()) {
+      return;
     }
 
-    addBtn.addEventListener("click", () => {
-      const task = {
-        id: new Date().getTime(),
-        content: taskInput.value,
-        isDone: false,
-      };
-      const taskEl = createTaskEl({
-        isDone: false,
-        content: taskInput.value,
-      });
+    const task = {
+      id: new Date().getTime(),
+      content: taskInput.value,
+      isDone: false,
+    };
 
-      taskInput.value = "";
-      listSection.prepend(taskEl);
-
-      const list = localStorageController().getList();
-      list.unshift(task);
-
-      localStorageController().setList(list);
+    const taskEl = createTaskEl({
+      isDone: false,
+      content: taskInput.value,
     });
+
+    listSection.prepend(taskEl);
+
+    const list = localStorageController().getList();
+    list.unshift(task);
+    localStorageController().setList(list);
+
+    taskInput.value = "";
   };
+
+  addBtn.addEventListener("click", addTask);
 
   /**
    * 체크박스를 토글합니다.
