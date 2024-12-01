@@ -1,0 +1,43 @@
+.ss-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ss-body {
+  width: 60vw;
+  height: 60vh;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+
+  gap: 1px;
+  background-color: #cbd5e0;
+  border: 1px solid #cbd5e0;
+}
+
+.cell,
+.cell-header {
+  display: flex;
+  align-items: center;
+}
+
+.cell-header {
+  background-color: #e2e8f0;
+  justify-content: center;
+}
+
+.cell-header.active {
+  background-color: #a0aec0;
+  color: white;
+}
+
+.cell {
+  background-color: white;
+  border: none;
+}
+
+.cell:focus {
+  outline: none;
+}
